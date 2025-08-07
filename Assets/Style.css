@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:wght@800&display=swap");
+@font-face {
+  font-family: "Luckiest-Guy";
+  src: url(./fonts/Luckiest_Guy/LuckiestGuy-Regular.ttf);
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 505px;
+  background-image: url(./images/Header\ Background-cellphone.svg);
+  background-size: cover;
+  color: white;
+}
+#header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 466px;
+  margin: 0px;
+}
+#header-content h1,
+p {
+  margin: 20px;
+}
+
+#header-content h1 {
+  display: flex;
+  font-family: "Luckiest-Guy", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  max-width: 178px;
+  max-height: 64px;
+}
+#buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border-radius: 28px;
+  height: 54px;
+  width: 381px;
+}
+/* Main Configuration */
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+main .text-img h2 {
+  width: 370px;
+  height: 99px;
+  text-align: start;
+}
+.sections {
+  margin: 20px;
+}
+/* Footer configuration */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 140px;
+  background-color: #23272a;
+  margin: 0px;
+}
+
+/* Desktop Version */
+
+@media screen and (min-width: 720px) {
+  header {
+    height: 459px;
+    background-image: url(./images/Header\ Background-desktop.svg);
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #buttons {
+    flex-direction: row;
+    gap: 10px;
+  }
+  #header-content {
+    justify-content: center;
+    align-items: center;
+  }
+  #header-content p {
+    max-width: 757px;
+    max-height: 66px;
+  }
+  /* Main Images configurations */
+  main img {
+    width: 971px;
+    height: 394px;
+  }
+  .sections {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 80%;
+  }
+  main #img-01 {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: start;
+
+    width: 971px;
+    height: 394px;
+    gap: 20px;
+  }
+  main #img-02 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: center;
+    justify-content: start;
+
+    width: 971px;
+    height: 394px;
+    gap: 20px;
+  }
+  main #img-03 {
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+
+    width: 971px;
+    height: 394px;
+  }
+  main .text-img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  main .text-img h2 {
+    max-width: 329px;
+    max-height: 270px;
+  }
+}
